@@ -151,22 +151,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Tawk.to Live Chat Script */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/YOUR_TAWK_TO_ID/1hqr9slm7';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          `
-        }}
-      />
+      {/* Address section in footer */}
+      <div className="py-6 border-t border-border/50">
+        <p className="text-sm text-center text-muted-foreground">
+          <span className="font-semibold">Arcstark Headquarters:</span> 1 Bouar Close Off Bangui Street, Wuse 2, Abuja, Nigeria
+        </p>
+      </div>
     </footer>
   );
 };

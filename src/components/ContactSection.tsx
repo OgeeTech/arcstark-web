@@ -24,7 +24,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      content: "123 Tech Street, Innovation District, San Francisco, CA 94105",
+      content: "1 Bouar Close Off Bangui Street, Wuse 2, Abuja, Nigeria",
       color: "primary"
     },
     {
