@@ -72,13 +72,13 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-muted/30">
+    <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our <span className="text-primary">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We offer comprehensive tech solutions to help your business thrive in the digital world.
           </p>
         </div>

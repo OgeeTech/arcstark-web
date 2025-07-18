@@ -52,13 +52,13 @@ const BookingSection = () => {
   };
 
   return (
-    <section id="booking" className="py-20 bg-gradient-hero">
+    <section id="booking" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Book a <span className="text-primary">Consultation</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to bring your ideas to life? Schedule a free consultation with our experts 
             and let's discuss how we can help transform your vision into reality.
           </p>
@@ -67,7 +67,7 @@ const BookingSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Features */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               What to expect from your consultation:
             </h3>
             
@@ -77,7 +77,7 @@ const BookingSection = () => {
                   <feature.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="text-lg text-foreground font-medium">{feature.text}</p>
+                  <p className="text-lg text-gray-900 font-medium">{feature.text}</p>
                 </div>
               </div>
             ))}
@@ -86,9 +86,9 @@ const BookingSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <Star className="w-5 h-5 text-primary" />
-                  <span className="font-semibold text-foreground">Expert Insight</span>
+                  <span className="font-semibold text-gray-900">Expert Insight</span>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-gray-600">
                   Our consultations have helped over 100+ businesses make informed 
                   technology decisions and avoid costly mistakes.
                 </p>

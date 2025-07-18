@@ -62,13 +62,13 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-background">
+    <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our <span className="text-primary">Portfolio</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our latest projects and see how we've helped businesses transform their digital presence.
           </p>
         </div>
