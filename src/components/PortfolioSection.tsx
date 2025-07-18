@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
 const PortfolioSection = () => {
+  // === Project Data ===
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -62,8 +63,10 @@ const PortfolioSection = () => {
   ];
 
   return (
+    // === Portfolio Section Starts ===
     <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-6">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our <span className="text-primary">Portfolio</span>
@@ -73,17 +76,22 @@ const PortfolioSection = () => {
           </p>
         </div>
 
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group overflow-hidden border-0 shadow-card hover:shadow-primary/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <Card
+              key={index}
+              className="group overflow-hidden border-0 shadow-card hover:shadow-primary/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            >
+              {/* Project Image with Overlay */}
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 {/* Hover overlay with links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <Button size="sm" variant="secondary" className="bg-white/90 text-foreground hover:bg-white">
@@ -100,6 +108,7 @@ const PortfolioSection = () => {
                 </Badge>
               </div>
 
+              {/* Project Details */}
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                   {project.title}
@@ -107,7 +116,8 @@ const PortfolioSection = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <Badge key={idx} variant="secondary" className="text-xs">
@@ -120,6 +130,7 @@ const PortfolioSection = () => {
           ))}
         </div>
 
+        {/* View All Button */}
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" className="hover:bg-primary hover:text-primary-foreground hover:border-primary">
             View All Projects
@@ -127,6 +138,7 @@ const PortfolioSection = () => {
         </div>
       </div>
     </section>
+    // === Portfolio Section Ends ===
   );
 };
 

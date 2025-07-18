@@ -57,9 +57,9 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/cf190ce2-6628-496c-8441-e25dc1418eff.png" 
+                src="/img/logo2.png" 
                 alt="Arcstark Logo" 
-                className="h-10 w-auto"
+                className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 w-auto"
               />
             </div>
 
