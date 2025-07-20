@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/20 rounded-lg rotate-45 animate-float" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-orange/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
 
-      <div className="container mx-auto px-6 text-center relative z-10 flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="container mx-auto px-6 pt-24 text-center relative z-10 flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Text Content */}
         <div className="max-w-2xl text-left">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-slide-up">

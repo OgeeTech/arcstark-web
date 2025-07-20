@@ -30,7 +30,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      content: "+1 (555) 123-4567",
+      content: "+234 903 9833 569",
       color: "accent"
     },
     {
@@ -102,15 +102,18 @@ const ContactSection = () => {
 
             {/* Map placeholder */}
             <Card className="overflow-hidden border-0 bg-card">
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
-                    <p className="text-muted-foreground text-sm">Interactive Map</p>
-                  </div>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.339231350939!2d7.484395175983111!3d9.082775890964716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b49a5cefa65%3A0xf8e0dc7f56f49679!2s1%20Bouar%20Cl%2C%20Wuse%2C%20Abuja%20900102%2C%20Federal%20Capital%20Territory%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1721487087123!5m2!1sen!2sng"
+                width="100%"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-xl"
+              ></iframe>
             </Card>
+
           </div>
 
           {/* Contact Form */}
