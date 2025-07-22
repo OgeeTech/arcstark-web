@@ -6,7 +6,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import BookingSection from "@/components/BookingSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import TawkChatButton from "@/components/WhatsAppButton";
+import TawkChatButton from "@/components/TawkChatButton";
 import TawkChatWidget from "@/components/TawkChatWidget";
 
 const Index = () => {
@@ -21,7 +21,7 @@ const Index = () => {
       <ContactSection />
       <Footer />
       <TawkChatButton />
-      <TawkChatWidget propertyId="6437ad9e4247f20fefef5d2c" widgetId="1gdif2l9n" />
+      <TawkChatWidget/>
     </div>
   );
 };
