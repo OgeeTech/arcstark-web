@@ -30,7 +30,7 @@ const TawkChatButton = () => {
       aria-label="Open Chat"
     >
       <span className="absolute w-full h-full rounded-full animate-ping bg-primary/40"></span>
-      <MessageCircle className="w-8 h-8 animate-pulse group-hover:animate-none" />
+      {/* <MessageCircle className="w-8 h-8 animate-pulse group-hover:animate-none" /> */}
     </button>
   );
 };
