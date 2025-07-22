@@ -26,7 +26,7 @@ const TawkChatButton = () => {
   return (
     <button
       onClick={openTawkChat}
-      className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 group"
       aria-label="Open Chat"
     >
       <span className="absolute w-full h-full rounded-full animate-ping bg-primary/40"></span>
