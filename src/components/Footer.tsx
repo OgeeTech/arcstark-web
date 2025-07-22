@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/cf190ce2-6628-496c-8441-e25dc1418eff.png" 
+                src="/img/logo2.png" 
                 alt="Arcstark Logo" 
                 className="h-12 w-auto mb-4"
               />
