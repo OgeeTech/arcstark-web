@@ -78,7 +78,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white scroll-mt-24">
+    <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white lg:scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -129,13 +129,13 @@ const ServicesSection = () => {
                   ))}
                 </ul>
 
-                <Button
+                {/* <Button
                   variant="ghost"
                   className="group/btn p-0 h-auto text-primary hover:text-primary-foreground hover:bg-primary"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}

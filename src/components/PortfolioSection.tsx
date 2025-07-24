@@ -64,7 +64,7 @@ const PortfolioSection = () => {
 
   return (
     // === Portfolio Section Starts ===
-    <section id="portfolio" className="py-20 bg-white scroll-mt-24">
+    <section id="portfolio" className="py-20 bg-white lg:scroll-mt-20">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">

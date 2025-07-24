@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       {/* Floating shapes */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-orange/10 rounded-full animate-float"></div>
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/20 rounded-lg rotate-45 animate-float" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-orange/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
 

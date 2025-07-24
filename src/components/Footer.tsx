@@ -119,7 +119,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
             <div className="text-sm text-muted-foreground">
-              © 2024 Arcstark. All rights reserved. Built with passion and code.
+              © 2025 Arcstark. All rights reserved. Built with passion and code.
             </div>
 
             {/* Social links */}
