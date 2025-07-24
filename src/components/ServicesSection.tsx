@@ -78,7 +78,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white">
+    <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

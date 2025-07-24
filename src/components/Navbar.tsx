@@ -12,7 +12,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { title: "Home", href: "#" },
+    { title: "Home", href: "#home" },
     { title: "About", href: "#about" },
     { title: "Services", href: "#services" },
     { title: "Portfolio", href: "#portfolio" },
