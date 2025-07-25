@@ -51,7 +51,7 @@ const Footer = () => {
               <img 
                 src="/img/logo2.png" 
                 alt="Arcstark Logo" 
-                className="h-12 w-auto mb-4"
+                className="h-16 w-auto mb-4"
               />
               <h3 className="text-xl font-bold text-secondary-foreground mb-4">
                 Building the Future of Technology

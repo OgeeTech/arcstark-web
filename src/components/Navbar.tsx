@@ -48,7 +48,7 @@ const Navbar = () => {
       <header 
         className={`fixed w-full z-50 transition-all duration-300 ${
           scrolled 
-            ? "py-3 bg-background/95 backdrop-blur-md shadow-md" 
+            ? "py-2 bg-background/95 backdrop-blur-md shadow-md" 
             : "py-5 bg-transparent"
         }`}
       >
@@ -56,11 +56,15 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
-                src="/img/logo2.png" 
-                alt="Arcstark Logo" 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 w-auto"
+              <img
+                src="/img/logo2.png"
+                alt="Arcstark Logo"
+                className={`transition-all duration-300 w-auto ${scrolled ? "h-14 -mt-1" : "h-24 -mt-4 sm:h-28 sm:-mt-6"
+                  }`}
               />
+
+
+
             </div>
 
             {/* Desktop Navigation */}
