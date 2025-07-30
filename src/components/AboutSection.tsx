@@ -80,8 +80,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Lightbulb, Rocket, Users } from "lucide-react";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
 
 const AboutSection = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   const features = [
     {
       icon: Lightbulb,
@@ -161,7 +167,10 @@ const AboutSection = () => {
         </div>
 
         {/* === Statistics Section Start === */}
-        <div className="bg-gray-100 rounded-3xl py-10 px-6 md:px-20 shadow-md mt-12">
+        <div
+          ref={ref}
+          className="bg-gray-100 rounded-3xl py-10 px-6 md:px-20 shadow-md mt-12"
+        >
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 justify-center items-center">
             {[
               { number: 100, suffix: "+", label: "Projects Completed" },
@@ -171,14 +180,18 @@ const AboutSection = () => {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <h3 className="text-4xl font-bold text-primary">
-                  <CountUp end={stat.number} duration={2.5} />{stat.suffix}
+                  {inView ? <CountUp end={stat.number} duration={2.5} /> : 0}
+                  {stat.suffix}
                 </h3>
-                <h3 className="text-xl font-semibold text-secondary mt-2">{stat.label}</h3>
+                <h3 className="text-xl font-semibold text-secondary mt-2">
+                  {stat.label}
+                </h3>
               </div>
             ))}
           </div>
         </div>
         {/* === Statistics Section End === */}
+
       </div>
     </section>
   );
