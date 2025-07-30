@@ -79,6 +79,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Lightbulb, Rocket, Users } from "lucide-react";
+import CountUp from "react-countup";
 
 const AboutSection = () => {
   const features = [
@@ -160,24 +161,21 @@ const AboutSection = () => {
         </div>
 
         {/* === Statistics Section Start === */}
-        <div className="bg-gray-100 rounded-3xl py-10 px-6 md:px-20 shadow-md">
+        <div className="bg-gray-100 rounded-3xl py-10 px-6 md:px-20 shadow-md mt-12">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 justify-center items-center">
-            <div>
-              <h3 className="text-4xl font-bold text-primary">100+</h3>
-              <p className="text-sm text-gray-700 mt-2">Projects Completed</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-bold text-primary">50+</h3>
-              <p className="text-sm text-gray-700 mt-2">Happy Clients</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-bold text-primary">10+</h3>
-              <p className="text-sm text-gray-700 mt-2">Team Members</p>
-            </div>
-            <div>
-              <h3 className="text-4xl font-bold text-primary">5+</h3>
-              <p className="text-sm text-gray-700 mt-2">Years Experience</p>
-            </div>
+            {[
+              { number: 100, suffix: "+", label: "Projects Completed" },
+              { number: 50, suffix: "+", label: "Happy Clients" },
+              { number: 10, suffix: "+", label: "Team Members" },
+              { number: 5, suffix: "+", label: "Years Experience" },
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <h3 className="text-4xl font-bold text-primary">
+                  <CountUp end={stat.number} duration={2.5} />{stat.suffix}
+                </h3>
+                <h3 className="text-xl font-semibold text-secondary mt-2">{stat.label}</h3>
+              </div>
+            ))}
           </div>
         </div>
         {/* === Statistics Section End === */}
