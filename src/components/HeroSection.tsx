@@ -20,13 +20,12 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 pt-24 text-center relative z-10 flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Text Content */}
         <div className="max-w-2xl text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-foreground mb-6 animate-slide-up">
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-slide-up">
             Modern Tech
             <span className="block bg-gradient-primary bg-clip-text text-transparent">
               Solutions
             </span>
           </h1>
-
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Transforming ideas into cutting-edge digital experiences.
