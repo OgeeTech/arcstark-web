@@ -6,31 +6,31 @@ import {
   Linkedin,
   Instagram,
   Mail,
-  ArrowUp
+  ArrowUp,
 } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const socialLinks = [
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" }
+    { icon: Instagram, href: "#", label: "Instagram" },
   ];
 
   return (
     <footer className="bg-secondary text-white w-full relative">
       <div className="container mx-auto px-6 py-10">
-        {/* Newsletter signup */}
-        <div className="mb-6 max-w-md">
+        {/* Newsletter Signup - Centered */}
+        <div className="flex flex-col items-center justify-center text-center mb-10 max-w-md mx-auto">
           <h4 className="font-semibold mb-3">Stay Updated</h4>
-          <div className="flex gap-2">
+          <div className="flex gap-2 w-full">
             <Input
               placeholder="Enter your email"
-              className="bg-white text-black border-none"
+              className="bg-white text-black border-none flex-1"
             />
             <Button variant="default" size="icon">
               <Mail className="w-4 h-4" />
@@ -41,13 +41,13 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Bottom section */}
+        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-t border-gray-700 pt-6">
           <div className="text-sm text-gray-400 text-center md:text-left">
             © 2025 Arcstark. All rights reserved.
           </div>
 
-          {/* Social icons */}
+          {/* Social Icons */}
           <div className="flex gap-4">
             {socialLinks.map((social) => (
               <Button
@@ -62,7 +62,7 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Back to top button */}
+          {/* Back to Top */}
           <Button
             variant="outline"
             size="sm"

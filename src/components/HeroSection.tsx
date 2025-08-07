@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Calendar, Eye } from "lucide-react";
+import router from "next/router";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -40,6 +41,7 @@ const HeroSection = () => {
               <Calendar className="w-5 h-5" />
               Book a Session
             </Button>
+            
           </div>
         </div>
 

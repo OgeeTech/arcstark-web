@@ -56,12 +56,21 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <img
+              {/* <img
                 src="/img/logo2.png"
                 alt="Arcstark Logo"
-                className={`transition-all duration-300 w-auto ${scrolled ? "h-14 -mt-1" : "h-24 -mt-4 sm:h-28 sm:-mt-6"
+                className={`transition-all duration-300 w-auto ${scrolled ? "h-40 -mt-1" : "h-40 -mt-4 sm:h-28 sm:-mt-6"
                   }`}
-              />
+              /> */}
+
+
+              <div className="h-20 overflow-hidden flex items-center sm:h-24">
+                <img
+                  src="/img/logo2.png"
+                  alt="Arcstark Logo"
+                  className="h-40 w-auto transition-all duration-300"
+                />
+              </div>
 
 
 

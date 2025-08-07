@@ -55,7 +55,7 @@ const BookingSection = () => {
     <section id="booking" className="py-20 bg-white lg:scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-card mb-6">
             Book a <span className="text-primary">Consultation</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

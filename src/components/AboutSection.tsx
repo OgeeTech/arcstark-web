@@ -120,7 +120,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-card">
             About <span className="text-primary">Arcstark</span>
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">

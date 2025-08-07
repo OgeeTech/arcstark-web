@@ -201,7 +201,8 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="w-full bg-[#0f172a] text-white py-24">
+    // bg - [#0f172a]
+    <section id="services" className="w-full bg-card text-white py-24 lg:scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -214,10 +215,20 @@ const ServicesSection = () => {
 
         <div className="bg-card w-full rounded-3xl p-10 md:p-14 lg:p-16 shadow-md">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {services.map((service, index) => (
+            {/* {services.map((service, index) => (
               <div
                 key={index}
                 className="group transition-all duration-500 hover:-translate-y-1"
+              > */}
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="group transition-all duration-500 hover:-translate-y-1 
+      border border-transparent rounded-2xl 
+      bg-gradient-to-br from-white/5 to-white/10
+      hover:border-primary/60 hover:ring-1 hover:ring-primary/40
+      shadow-[0_0_15px_0_rgba(80,80,200,0.1)] hover:shadow-[0_0_25px_0_rgba(80,80,200,0.3)]
+      p-6 flex flex-col items-center text-center"
               >
                 <div className="mb-4">
                   <div
