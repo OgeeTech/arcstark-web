@@ -68,7 +68,7 @@ const Navbar = () => {
                 <img
                   src="/img/logo2.png"
                   alt="Arcstark Logo"
-                  className="h-20 lg:h-40 w-auto transition-all duration-300 lg:-mt-4"
+                  className="h-28 mt-6 lg:h-40 w-auto transition-all duration-300 lg:-mt-4"
                 />
 
               </div>
