@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { 
-  Menu,
-  X,
-  ChevronDown,
-  PhoneOutgoing
-} from "lucide-react";
+import { Menu, X, PhoneOutgoing } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,59 +16,42 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
     const element = document.querySelector(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <>
-      <header 
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled 
-            ? "py-2 bg-background/95 backdrop-blur-md shadow-md" 
-            : "py-5 bg-transparent"
-        }`}
+      <header
+        className={`fixed w-full z-50 transition-all duration-300 ${scrolled
+            ? "bg-background/95 backdrop-blur-md shadow-md"
+            : "bg-transparent"
+          }`}
       >
         <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between h-20 md:h-24 lg:h-28">
             {/* Logo */}
             <div className="flex items-center">
-              {/* <img
+              <img
                 src="/img/logo2.png"
                 alt="Arcstark Logo"
-                className={`transition-all duration-300 w-auto ${scrolled ? "h-40 -mt-1" : "h-40 -mt-4 sm:h-28 sm:-mt-6"
-                  }`}
-              /> */}
-
-
-              <div className="h-20 overflow-hidden flex items-center sm:h-24">
-                <img
-                  src="/img/logo2.png"
-                  alt="Arcstark Logo"
-                  className="h-28 mt-6 lg:h-40 w-auto transition-all duration-300 lg:-mt-4"
-                />
-
-              </div>
-
-
+                className="
+    h-32 sm:h-40 md:h-48 lg:h-56
+    w-auto object-contain
+    transition-all duration-300
+  "
+              />
 
             </div>
 
@@ -96,9 +74,9 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:flex items-center space-x-4">
-              <Button 
-                variant="hero" 
-                size="sm" 
+              <Button
+                variant="hero"
+                size="sm"
                 className="group"
                 onClick={() => scrollToSection("#booking")}
               >
@@ -126,11 +104,11 @@ const Navbar = () => {
         </div>
       </header>
 
+
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background transform transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden pt-20`}
+        className={`fixed inset-0 z-40 bg-background transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden pt-20`}
       >
         <div className="container mx-auto px-6 py-8">
           <nav className="flex flex-col space-y-4">
@@ -147,8 +125,8 @@ const Navbar = () => {
                 {item.title}
               </a>
             ))}
-            <Button 
-              variant="hero" 
+            <Button
+              variant="hero"
               className="w-full mt-4 group"
               onClick={() => scrollToSection("#booking")}
             >

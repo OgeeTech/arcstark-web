@@ -74,7 +74,7 @@ const HeroSection = () => {
 
         {/* Hero Animation */}
         <div
-          className="w-full md:w-1/2 animate-fade-in"
+          className="hidden lg:block w-full md:w-1/2 animate-fade-in"
           style={{ animationDelay: "0.4s" }}
         >
           <Lottie
